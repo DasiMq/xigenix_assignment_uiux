@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PikUp - Local Delivery at Its Best</title>
+    <link rel="stylesheet" href="style/style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="container">
+        <div class="header-content">
+          <div class="logo">
+            <div class="logo-icon">
+              <img src="assets/icons/box.svg" alt="Icon" />
+            </div>
+            Pik<span>Up</span>
+          </div>
+          <nav class="nav">
+            <a href="#" class="nav-link">Home</a>
+            <a href="#" class="nav-link">Activity</a>
+            <a href="#" class="nav-link">Notifications</a>
+            <a href="#" class="nav-link">Account</a>
+          </nav>
+          <div class="pro-badge">
+            <img src="assets/icons/star-stroke-filled.svg" />PikUp Pro
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+      <div class="container">
+        <div class="welcome">
+          <h1>Hi Dasikaran</h1>
+          <p>Ready to send something?</p>
+        </div>
+
+        <div class="content-grid">
+          <div class="form-section">
+            <h2 class="section-title">
+              <span><span class="highlight">PikUp</span> and Go!</span>
+              <span
+                >Local Delivery at Its <span class="highlight">Best</span></span
+              >
+            </h2>
+
+            <!-- Tabs -->
+            <div class="tabs">
+              <button class="tab active" data-tab="sending">
+                <img
+                  src="assets/icons/package-sent-colored-stroke-rounded.svg"
+                />
+                Sending
+              </button>
+              <button class="tab" data-tab="receiving">
+                <img
+                  src="assets/icons/package-receive-colored-stroke-rounded.svg"
+                />
+                Receiving
+              </button>
+            </div>
+
+            <!-- Form Steps -->
+            <div class="form-group">
+              <div class="form-input">
+                <input
+                  type="text"
+                  id="pickupLocation"
+                  placeholder="Choose your location"
+                />
+              </div>
+              <div class="form-input">
+                <input
+                  type="text"
+                  id="pickupLocation"
+                  placeholder="Choose recipient's location"
+                />
+              </div>
+            </div>
+
+            <button class="secondary-button" id="add-recipient-btn">
+              <img src="assets/icons/user-add-colored-stroke-rounded.svg" />
+              Add Recipient Details (Optional)
+            </button>
+
+            <!-- Category Selection -->
+            <label class="category-label">What you are sending?<span>*</span></label>
+            <div class="category-grid">
+              <div class="category-card" data-category="documents">
+                <span class="category-icon">📄</span>
+                <div class="category-name">Documents</div>
+              </div>
+              <div class="category-card" data-category="food">
+                <span class="category-icon">🍕</span>
+                <div class="category-name">Food</div>
+              </div>
+              <div class="category-card" data-category="clothes">
+                <span class="category-icon">👕</span>
+                <div class="category-name">Clothes</div>
+              </div>
+              <div class="category-card" data-category="other">
+                <span class="category-icon">⋯</span>
+                <div class="category-name">Other</div>
+              </div>
+            </div>
+
+            <button class="primary-btn" id="continue-btn">
+              Continue to Delivery Options →
+            </button>
+          </div>
+
+          <div class="hero-section">
+            <div class="hero-illustration">
+              <div class="phone-mockup"></div>
+              <div class="scooter"></div>
+              <div class="location-pin"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Mobile Navigation -->
+    <nav class="mobile-nav">
+      <div class="mobile-nav-items">
+        <a href="#" class="mobile-nav-item active">
+          <span>🏠</span>
+          Home
+        </a>
+        <a href="#" class="mobile-nav-item">
+          <span>📊</span>
+          Activity
+        </a>
+        <a href="#" class="mobile-nav-item">
+          <span>🔔</span>
+          Notification
+        </a>
+        <a href="#" class="mobile-nav-item">
+          <span>👤</span>
+          Account
+        </a>
+      </div>
+    </nav>
+
+    <!-- Bottom Sheet -->
+    <div class="bottom-sheet-overlay" id="bottomSheetOverlay">
+      <div class="bottom-sheet" id="bottomSheet">
+        <div class="bottom-sheet-header">
+          <h3 class="bottom-sheet-title">Add Recipient Details</h3>
+          <button class="close-btn" id="closeSheet">×</button>
+        </div>
+        <div class="bottom-sheet-content">
+          <div class="form-group">
+            <label for="recipientName">Recipient Name</label>
+            <input
+              type="text"
+              id="recipientName"
+              class="input-field"
+              placeholder="Enter recipient's name"
+            />
+          </div>
+          <div class="form-group">
+            <label for="recipientPhone">Phone Number</label>
+            <input
+              type="tel"
+              id="recipientPhone"
+              class="input-field"
+              placeholder="Enter phone number"
+            />
+          </div>
+          <div class="form-group">
+            <label for="recipientEmail">Email (Optional)</label>
+            <input
+              type="email"
+              id="recipientEmail"
+              class="input-field"
+              placeholder="Enter email address"
+            />
+          </div>
+          <button class="primary-btn" id="saveRecipient">Save Details</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="script/main.js"></script>
+  </body>
+</html>
