@@ -1,5 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  background-color: var(--slate-50);
+  color: var(--slate-800);
+  line-height: 1.4;
+}
+
 :root {
   /* Base Colors */
   --white: #ffffff;
@@ -44,37 +57,23 @@
   --zinc-900: #18181b;
   --zinc-950: #09090b;
 
-  --primary-blue-gradient-600-700-800: linear-gradient(
-    to top right,
-    var(--primary-blue-600) 0%,
-    var(--primary-blue-700) 50%,
-    var(--primary-blue-800) 100%
-  );
+  /* Green */
+  --green-50: #f0fdf4;
+  --green-500: #10b981;
+  --green-600: #059669;
 
-  --primary-blue-gradient-700-800-900: linear-gradient(
-    to top right,
-    var(--primary-blue-700) 0%,
-    var(--primary-blue-800) 50%,
-    var(--primary-blue-900) 100%
-  );
+  --primary-blue-gradient-600-700-800: linear-gradient(to top right,
+      var(--primary-blue-600) 0%,
+      var(--primary-blue-700) 50%,
+      var(--primary-blue-800) 100%);
 
-  --gray-gradient-400-500-600: linear-gradient(
-    to top right,
-    var(--zinc-400) 0%,
-    var(--zinc-500) 50%,
-    var(--zinc-600) 100%
-  );
-}
+  --primary-blue-gradient-700-800-900: linear-gradient(to top right,
+      var(--primary-blue-700) 0%,
+      var(--primary-blue-800) 50%,
+      var(--primary-blue-900) 100%);
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: "Outfit", sans-serif;
-  background-color: var(--slate-50);
-  color: var(--slate-800);
-  line-height: 1.4;
+  --gray-gradient-400-500-600: linear-gradient(to top right,
+      var(--zinc-400) 0%,
+      var(--zinc-500) 50%,
+      var(--zinc-600) 100%);
 }
