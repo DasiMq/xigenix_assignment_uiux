@@ -346,6 +346,7 @@
   left: 0;
   right: 0;
   border-top: 1px solid var(--slate-200);
+  background-color: var(--slate-50);
   padding: 12px 0;
   z-index: 100;
 }
@@ -511,6 +512,20 @@
 .form-textarea textarea::placeholder {
   font-weight: 300;
   color: var(--slate-400);
+}
+
+.input-error {
+  font-size: 13px;
+  color: var(--red-500);
+  margin-bottom: 8px;
+  display: none;
+}
+.input-error.visible {
+  display: block;
+}
+
+.input-field-invalid {
+  border-color: var(--red-500);
 }
 
 .sheet-action {

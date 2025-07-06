@@ -63,9 +63,11 @@
                     <div class="form-group">
                         <div class="form-input">
                             <input type="text" id="pickupLocation" placeholder="Choose your location" />
+                             <p class="input-error" id="pickupError"></p>
                         </div>
                         <div class="form-input">
-                            <input type="text" id="pickupLocation" placeholder="Choose recipient's location" />
+                            <input type="text" id="dropLocation" placeholder="Choose recipient's location" />
+                            <p class="input-error" id="dropError"></p>
                         </div>
 
                         <button class="secondary-btn" id="add-recipient-btn">
@@ -101,6 +103,7 @@
                     <div class="category-name">Other</div>
                 </div>
             </div>
+            <p class="input-error" id="categoryError" style="margin-top: -32px; margin-bottom: 32px;"></p>
 
             <div class="form-submit">
                 <button class="primary-btn" id="continue-btn">
@@ -153,10 +156,12 @@
                 <div class="form-input">
                     <label for="recipientName">Name</label>
                     <input type="text" id="recipientName" class="input-field" placeholder="Recipient's full name" />
+                    <p class="input-error" id="nameError"></p>
                 </div>
                 <div class="form-input">
                     <label for="recipientPhone">Phone Number</label>
                     <input type="tel" id="recipientPhone" class="input-field" placeholder="+94 7X XXX XXXX" />
+                    <p class="input-error" id="phoneError"></p>
                 </div>
                 <div class="form-textarea">
                     <label for="recipientNote">Notes</label>
