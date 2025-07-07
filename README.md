@@ -30,7 +30,7 @@ A modern, responsive web application for local delivery services that enables us
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/pikup.git
+   git clone https://github.com/DasiMq/xigenix_assignment_uiux
    cd pikup
    ```
 
