@@ -4,7 +4,7 @@
 [![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
 [![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 
-A modern, responsive web application for local delivery services that enables users to send and receive packages with ease. Built with vanilla HTML, CSS, and JavaScript, PikUp offers an intuitive interface for managing deliveries with features like recipient management, category selection, and real-time form validation.
+A modern, responsive web application for local delivery services that enables users to send and receive packages with ease. Built with vanilla HTML, CSS, and JavaScript, PikUp offers an intuitive interface for managing deliveries with features like recipient management and category selection.
 
 ## 🚀 Features
 
